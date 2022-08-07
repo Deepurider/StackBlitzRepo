@@ -1,8 +1,19 @@
 <div class="container">
   <div class="row">
-  <div class="col-md-12">
-    Hello World, this is first project you ever made in stackblitz. <br>
-    Thank you for consuming this one.
-  </div>
+    <div class="col-md-3">Enter UserName</div>
+    <div class="col-md-3">
+      <input type="text" [formControl]="usernameControl" />
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-success" (click)="getEnabled()">
+        Get Enabled
+      </button>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-danger" (click)="getDisabled()">
+        Get Disabled
+      </button>
+    </div>
   </div>
 </div>
+<button class='btn btn-info' (click)='startLoop()'>Start Loop</button>
