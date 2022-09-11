@@ -1,0 +1,10 @@
+<h1 class="text-center">Getting Data from Api</h1>
+<ag-grid-angular
+  style="width: 100%; height: 700px"
+  class="ag-theme-alpine"
+  [columnDefs]="columnDefs"
+  [rowData]="rowData$ | async"
+  [rowSelection]="'multiple'"
+  [animateRows]="true"
+  [pagination]="true"
+></ag-grid-angular>

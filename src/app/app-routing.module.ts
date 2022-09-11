@@ -3,10 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'api',
     loadChildren: () =>
-      import('./feature/main/main.module').then((m) => m.MainModule),
-    pathMatch: 'full',
+      import('./feature/main/main.module').then((m) => m.MainModule)
   },
 ];
 @NgModule({

@@ -4,10 +4,11 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class UserService {
-  public Url: string = 'http://swet.site.api:92/api/Users';
+  public Url: string = 'https://api.publicapis.org/entries';
   constructor(private http: HttpClient) {}
 
-  getUsers(): Observable<any> {
+  public getUsers(): Observable<any> {
     return this.http.get(this.Url);
   }
+
 }

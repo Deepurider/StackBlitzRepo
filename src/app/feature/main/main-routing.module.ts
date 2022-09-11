@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainContainerComponent } from './containers/main-container/main-container.component';
+import { AgGridApiComponent } from './components/ag-grid-api/ag-grid-api.component';
 
 const routes: Routes = [
-  { path: '', component: MainContainerComponent, pathMatch: 'full' },
+  {path:'ag-grid-api' , component:AgGridApiComponent}
 ];
 
 @NgModule({
