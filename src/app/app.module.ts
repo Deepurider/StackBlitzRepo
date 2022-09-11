@@ -4,9 +4,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule , ReactiveFormsModule , HttpClientModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+  ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
 })
